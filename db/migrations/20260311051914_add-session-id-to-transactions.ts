@@ -1,6 +1,4 @@
-import type { Knex } from "knex";
-import { table } from "node:console";
-
+import type { Knex } from "knex"
 
 export async function up(knex: Knex): Promise<void> {
   await knex.schema.alterTable('transactions', (table) => {
